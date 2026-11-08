@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    container_name: school-helper-bot
+    env_file: .env
+    environment:
+      DB_PATH: /app/data/school_helper.db
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
