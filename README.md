@@ -98,8 +98,8 @@ pip install -r requirements.txt
 ```
 
 ### 4. Добавьте сертификаты
-Скачайте с https://www.gosuslugi.ru/crt сертификаты **Russian Trusted Root CA** и **Russian Trusted Sub CA** и положите их в папку `certs/`.
-Без них сервер MAX не установит защищённое соединение.
+Сертификаты Минцифры (**Russian Trusted Root CA** и **Russian Trusted Sub CA**) уже лежат в папке `certs/` — ничего делать не нужно, бот подключит их сам.
+Если когда-нибудь появится ошибка SSL, скачайте свежие версии с https://www.gosuslugi.ru/crt и замените файлы в `certs/`.
 
 ### 5. Заполните `.env`
 MAX_TOKEN=ваш_токен_бота
